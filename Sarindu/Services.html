@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <link rel="stylesheet" href="services.css">
+    <script src="services.js"></script>
+</head>
+<body>
+    <!---Header--->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo2.png"></a>
+            <h1 class="company-name">PRIME INSURANCE</h1>
+            <div class="topbtn-links">
+                <ul>
+                    <a href="http://localhost/IWT Final Project/Ranuja/Payment/payment.php"><button class="topbtn">RENEWAL</button></a>
+                    <a href="http://localhost/IWT Final Project/Ranuja/Motor claim/motorClaim.php"><button class="topbtn">CLAIM</button></a>
+                    <a href="http://localhost/IWT Final Project/Ranuja/signUp/signUp.php"><button class="topbtn-sign">SIGN UP</button></a>
+                    <a href="http://localhost/IWT Final Project/Sarindu/login.php"><button class="topbtn-log">LOGIN</button></a>
+
+                </ul>
+            </div>
+        </nav>
+        <hr>
+        <nav>
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="../Shafa/AboutUs.html">ABOUT US</a></li>
+                    <li><a href="Services.html"><div class="dropdown"><button class="dropbtn">SERVICES</button></a>
+                            <div class="dropdown-content">
+                                <a href="Services.html#comprehensive">Comprehensive</a>
+                                <a href="Services.html#third-party">Third Party</a>
+                                <a href="Services.html#PIP">PIP</a>
+                            </div>
+                      </div></li>
+                    <li><a href="../Shafa/Feedback.html">FEEDBACK</a></li>
+
+                    <div class="search">
+                        <input class="srch" type="search" name="" placeholder="Search services">
+                        <a href="#"><button class="sbtn">Search<img class="srch-icon" src="img/search_icon.png"></button></a>
+                    </div>
+                    
+                </ul>
+            </div>
+        </nav>
+
+    </section>
+
+    <section class="">
+        <img class="sbanner" id="banner" src="img/service-banner.jpg">
+        <div class="">
+            <div class="sidebar">
+                <button class="bttn" type="button" id="btn1" onclick="swapContent('btn1')">Private Car Insurance</button>
+                <button class="bttn" type="button" id="btn2" onclick="swapContent('btn2')">Commercial Vehicle Insurance</button>
+                <button class="bttn" type="button" id="btn3" onclick="swapContent('btn3')">Motorcycle Insurance</button>
+                <button class="bttn" type="button" id="btn4" onclick="swapContent('btn4')">Third Party Insurance</button>
+            </div>
+            <div class="content" id="content">
+                <h1 >Our Services</h1><br><br>
+                <p>Vehicle insurance (also known as car insurance, motor insurance, or auto insurance) is insurance for cars, trucks, motorcycles, and other road vehicles. Its primary use is to provide financial protection against physical damage or bodily injury resulting from traffic collisions and against liability that could also arise from incidents in a vehicle. Vehicle insurance may additionally offer financial protection against theft of the vehicle, and against damage to the vehicle sustained from events other than traffic collisions, such as keying, weather or natural disasters, and damage sustained by colliding with stationary objects. The specific terms of vehicle insurance vary with legal regulations in each region.</p><br>
+                <p>Road accidents are a nightmare for everyone. That's where we come into play. Motor Insurance in Sri Lanka has never been easier with a range of solutions available for all types of vehicles, be it a car, truck, motorbike or hybrid. So, the next time your vehicle takes a hit, we will weather the hit for you. Find out more about our policy coverages now.</p>
+
+                <br><br>
+                <div class="para" ></div>
+            </div>
+        </div>
+    </section>
+
+    <!---Image & Description--->
+    <section class="section3">
+        <h1>To Make A Claim</h1>
+        <p>We provide easy & efficient claim process</p>
+        <br>
+
+        <div class="row">
+            <div class="section3-col">
+                <img src="img/c1.jfif">
+                <h3>Give us a call</h3>
+            </div>
+            <div class="section3-col">
+                <img src="img/c2.jpeg">
+                <h3>Virtual Assessment</h3>
+            </div>
+            <div class="section3-col">
+                <img src="img/c3.jpeg">
+                <h3>Claim Settlement</h3>
+            </div>
+        </div>
+    </section>
+
+    <!---Block Description--->
+    <section class="section1">
+        <h1>Policy Types You Can Get</h1>
+        <p>What we offer is the best</p>
+
+        <div class="block" id="comprehensive">
+            <div class="block-col">
+                <h3 class="block-title" >Comprehensive</h3>
+                <p class="block-text">This covers all the losses and damages caused to you and your vehicle. This includes, Covering for Your Car's Damages, Protecting your Pocket from Third-Party Liabilities, customize your policy as you want also Protects your Car During Natural Disasters, Compensates you in case of Car Theft and you Can opt for Breakdown Assistance as well. If you looking for such assistance comprehensive issuance is just for you. Although slightly more expensive, this plan would give you complete coverage.</p>
+            </div>
+            <div class="block-col" id="third-party">
+                <h3 class="block-title">Third Party</h3>
+                <p class="block-text">This is the most basic car insurance plan that only covers damages and losses your car could cause to any third party. It only offers coverage for third-party damages and losses such as if due to an accident or collision, you hurt a third-party person, his/her vehicle, or third-party property. Additionally, it also includes a personal accident cover to protect you from personal injuries or death. If you are currently driving a very old car, or you rarely drive then maybe having basic third-party insurance would be for you.</p>
+            </div>
+            <div class="block-col" id="PIP">
+                <h3 class="block-title">Personal Injury Protection</h3>
+                <p class="block-text">This will cover the medical or funeral costs after an accident. It does not matter whether you are the driver or a passenger. this will cover you all. Also this will cover even if you are the fault party. It doesn't matter who is responsible for the accident. This will help you to cover the personal injuries and costs after an accident. If you are looking to cover such costs then this might be the one for you.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!---Footer--->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="img/logo2.png" class="flogo">
+                <p>Our clients are our values. We serve our best for our clients. We are the most trusted and renowned partners. World premium Insurance coverages for all types of vehicles. We offer what you want. Let us serve you for a better tomorrow.</p>
+            </div>
+            <div class="col">
+                <h3>NAVIGATION</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="AboutUs.html">ABOUT US</a></li>
+                    <li><a href="Services.html">SERVICES</a></li>
+                    <li><a href="Feedback.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>CONTACT US</h3>
+                <p>Tel : +94 - 123456789</p>
+                <p class="email">Email : assignmentg@gmail.com</p>
+                <p>Address : Kandy road,</p>
+                <p>Malabe, Western Province,</p>
+                <p>Sri Lanka.</p>
+            </div>
+            <div class="col">
+                <h3>FIND US ON</h3>
+                <div class="social">
+                    <a href="https://www.facebook.com/"><img class="social-icon" src="img/fb.png"></a>
+                    <a href="https://www.twitter.com/"><img class="social-icon" src="img/twitter.png"></a>
+                    <a href="https://www.instagram.com/"><img class="social-icon" src="img/insta.png"></a>
+                    <a href="https://www.linkedin.com/"><img class="social-icon" src="img/linkedin.png"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2021 Prime Insurance. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
