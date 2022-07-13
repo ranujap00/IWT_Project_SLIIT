@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.abcinsurance.com</title>
+    <link rel="stylesheet" href="adminxx.css">
+	<script src = "adminxx.js"></script>
+    
+</head>
+<body>
+    <!---Header--->
+	<section class="header">
+	
+        <!-- <script src="script.js"></script> -->
+        <nav>
+            <a href="../../../Sarindu/index.html"><img src="img/logo2.png"></a>
+            <h1 class="company-name">PRIME INSURANCE</h1>
+            <div class="topbtn-links">
+				<ul>
+				<img src="img/dp.png" style = "height:125px; width:125px; ">
+				</ul>
+				<br>
+                <ul>
+                    <a href="../../../Sarindu/index.html"><button class="topbtn-log">SIGN OUT</button></a>
+
+                </ul>
+			
+            </div>
+        </nav>
+        <hr>
+        <nav>
+            
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../../../Sarindu/index.html">HOME</a></li>
+                    <li><a href="../../../Shafa/AboutUs.html">ABOUT US</a></li>
+                    <li><a href="../../../Sarindu/Services.html"><div class="dropdown"><button class="dropbtn">SERVICES</button></a>
+                            <div class="dropdown-content">
+                                <a href="../../../Sarindu/Services.html#comprehensive">Comprehensive</a>
+                                <a href="../../../Sarindu/Services.html#third-party">Third Party</a>
+                                <a href="../../../Sarindu/Services.html#PIP">PIP</a>
+                            </div>
+                      </div></li>
+                    <li><a href="../../../Shafa/Feedback.html">FEEDBACK</a></li>
+
+                    <div class="search">
+                        <input class="srch" type="search" name="" placeholder="Search services">
+                        <a href="#"><button class="sbtn">Search<img class="srch-icon" src="img/search_icon.png"></button></a>
+                    </div>
+                    
+                </ul>
+            </div>
+        </nav>  
+    </section>
+	
+	
+	<!---admin heading --->
+	<br><br>
+	<section>
+	    <div>
+		   <center> <h1 class = "admin-heading">ADMINISTRATOR PREVILEGES</h1></center>
+		</div>
+	</section>
+
+    <!---search account --->
+	<section class = "searchacc">
+	    <form action="deleteAccount.php" method="get">
+                <div class="searchaccount">
+				    <h1 class="manageaccount">MANAGE ACCOUNTS</h1><br><br>
+                   	<input class="record" type="text" name="accountID">	<br>	
+                    <!-- <a href="deleteAccount.php"><button class="btn-search" >DELETE</button></a> -->
+                    <input type="submit" value="DELETE" class="btn-search" name="submit">
+                </div>
+
+        </form>
+        <div>
+            <a href="displayuse.php"><button class="btn-search" >USER RECORDS</button></a>
+			<a href="displayem.php"><button class="btn-search">EMPLOYEE RECORDS</button></a>
+        </div>
+	</section>
+	
+	<!---New service form--->
+    <section class = "text-service">
+	
+	    <div style = "float:left;float:center; width:40%">
+		<div id="effect">
+		    <h1 class="servhead">SERVICE</h1><br><br>
+			<P class="servdetail">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+            make a type specimen book.</P>
+			<br>
+			<!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="img/x.jpg" style="width:100%">
+               
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="img/y.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="img/w.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        <!-- The dots/circles -->
+        <div class="dotset">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+		</div>
+		</div>
+		
+	    <div style = "float:right;width:40%">
+		    <form id ="form" action="service.php" method="post">
+            <label for="newservice"style = "color:white;font-size:18pt">Add a new service : </label><br>
+			<br>
+            <input type="text" id="nservice" name="nservice"><br>
+			
+			<label for="servicedate"style = "color:white; font-size:18pt">Enter the starting date : </label><br>
+			<br>
+			
+            <input type="date" id="ndate" name="ndate"><br>
+			
+			<label for="servicedate"style = "color:white; font-size:18pt">Enter the ending date : </label><br>
+			<br>
+	        <input type="date" id="edate" name="edate"><br>
+  
+            <p><button type= "submit" name="submit" class="btn-sub">SUBMIT</button></p>
+
+            </form>
+		</div>
+
+	</section>	
+	
+	<!---agent details--->	
+	<section class="agentdetail">
+
+	    <div>
+		
+			<h1 class="agentleg">ADD NEW AGENT</h1><br><br>
+		
+		<div>
+			<img style="right:300px;height:612px; width:400px; margin-bottom:100px; position:absolute;" src="img/employee2.jpg">
+		</div>
+			
+		    <form action="adminxx.php" method="post" class="agentform">
+
+			  <label for="fname">Full name :</label>
+              <input type="text" id="fname" name="fname"><br><br>       
+              <label for="birthday">DOB &nbsp &nbsp &nbsp &nbsp: </label>
+              <input type="date" id="birthday" name="birthday">
+			  <label for="nic">NIC:</label>
+              <input type="nic" id="nic" name="nic"><br><br>
+			  <label for="contact">Contact &nbsp : </label>
+              <input type="contact" id="contact" name="contact">
+			  <label for="role">Role:</label>
+              <input type="role" id="role" name="role"><br><br>
+			  <label for="address">Address   :</label><br>
+              <input type="address"id="address" name="address"><br><br>
+			  <label for="User">Username   :</label><br>
+              <input type="User"id="User" name="User"><br><br>
+              <label for="pass">Password   :</label><br>
+              <input type="pass"id="pass" name="pass"><br><br>
+
+              <p><button type="submit" name="submit" class="btn-sub">SUBMIT</button></p>
+			</form>
+			
+	    </div>
+
+	</section>
+	
+	
+    <!---Footer--->
+	
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="img/logo2.png" class="flogo" alt="logo">
+                <p>
+                    Our clients are our values. We serve our best for our clients. We are the most trusted and renowned partners. World premium Insurance coverages for all types of vehicles. We offer what you want. Let us serve you for a better tomorrow.
+                </p>
+            </div>
+            <div class="col">
+                <h3>NAVIGATION</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html">ABOUT US</a></li>
+                    <li><a href="index.html">SERVICES</a></li>
+                    <li><a href="index.html">FEEDBACK</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>CONTACT US</h3>
+                <p><a href="tel: +94 - 123456789">Tel : +94 - 123456789</a></p>
+                <p class="email"><a href="mailto: assignmentg@gmail.com">Email : assignmentg@gmail.com</a></p>
+                <p>Address : Kandy road,</p>
+                <p>Malabe, Western Province,</p>
+                <p>Sri Lanka.</p>
+            </div>
+            <div class="col">
+                <h3>FIND US ON</h3>
+                <div class="social">
+                    <a href="https://www.facebook.com/"><img class="social-icon" src="img/fb.png" alt="facebook icon"></a>
+                    <a href="https://www.twitter.com/"><img class="social-icon" src="img/twitter.png" alt="twitter icon"></a>
+                    <a href="https://www.instagram.com/"><img class="social-icon" src="img/insta.png" alt="instagram icon"></a>
+                    <a href="https://www.linkedin.com/"><img class="social-icon" src="img/linkedin.png" alt="linkedin icon"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2021 ABC Insurance. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
