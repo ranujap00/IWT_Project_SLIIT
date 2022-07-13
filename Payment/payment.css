@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*----Logo, Top Buttons, Menu & Search Bar----*/
+
+/*----Header background----*/
+.header {
+    height: 350px;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(../img/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*----Navigation menu----*/
+nav {
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----Logo----*/
+nav img {
+    width: 150px;
+    height: 100px;
+}
+
+.company-name {
+    font-size: 62px;
+    color: white;
+    margin-left: 50px;
+}
+
+/*----Top buttons----*/
+/*----Renewal, Claim----*/
+.topbtn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+/*----Sign up----*/
+.topbtn-sign {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px ;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/*----Login----*/
+.topbtn-log {
+
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px ;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/*----Renewal, Claim Hover effect----*/
+.topbtn:hover {
+    border: 1px solid #f44336;
+    background: rgb(27, 41, 65);
+    transition: 1s;
+}
+
+/*----Sign up, Login Hover effect----*/
+.topbtn-sign:hover {
+    border: 1px solid #f44336;
+    background: rgb(229, 120, 37);
+    transition: 1s;
+}
+
+.topbtn-log:hover {
+    border: 1px solid #f44336;
+    background: rgb(229, 120, 37);
+    transition: 1s;
+}
+
+/*----Navigation bar----*/
+.nav-links {
+    flex: 1;
+    text-align: left;
+    float: left;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orangered;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    /*padding: 12px 16px;*/
+    text-decoration: none;
+    text-align: left;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: lightsalmon
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: transparent;
+  }
+
+  /*----Search bar----*/
+.search {
+    width: 300px;
+    float: right;
+    /* margin-left: 540px; */
+}
+.srch {
+    font-family: monospace;
+    font-size: 16px;
+    font-style: italic;
+    background: transparent;
+    width: 200px;
+    height: 40px;
+    border: 1px solid orangered;
+    border-right: none;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.sbtn {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(246, 139, 31);
+    border: 2px solid orangered;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.srch-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width:1300px) {
+    nav img {
+        width: 120px;
+        height: 80px;
+    }
+    .company-name {
+        font-size: 50px;
+    }
+    .topbtn {
+        padding: 10px 11px;
+        font-size: 16px;
+    }
+    .topbtn-sign {
+        margin-left: 10px;
+        padding: 10px ;
+        font-size: 16px;
+    }
+    .topbtn-log {
+        padding: 10px ;
+        font-size: 16px;
+    }
+    .text-box h1 {
+        font-size: 50px;
+    }
+    .text-box p {
+        margin: 8px 0 40px;
+        font-size: 12px;
+    }
+    .text-box-btn {
+        padding: 11px 24px;
+        font-size: 12px;
+    }
+    #slider {
+        height:360px;
+        width:720px;
+        margin:100px auto 10px;
+        padding: 0% 6%;
+    }
+    #mask {
+        height:360px;
+    }
+    #slider li {
+        width:720px;
+        height:360px;
+        top:-325px;
+    }
+    #slider li img {
+        width: 720px;
+        height: 480px;
+    }
+}
+
+
+/* RANUJA */
+
+.main{
+    display: inline-flex;
+}
+
+
+.main-body{
+    box-sizing: border-box;
+}
+
+.fieldset-1{
+    width:900px;
+    height:600px;
+    border: 2px solid red;
+    margin-bottom: 30px;
+    margin-left: 5vw;
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: snow;
+}
+
+.fieldset-2{
+    width: 500px;
+    height: 600px;
+    border: 2px solid red;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: snow;
+}
+
+.objective{
+    margin-top: 20px;
+    font-size: 35px;
+}
+
+@media(min-width: 1700px){
+    .fieldset-1{
+        width:1000px;
+        height:600px;
+        border: 2px solid red;
+        margin-bottom: 30px;
+        margin-left: 10%;
+        border-right: none;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        background-color: snow;
+    }
+    
+    .fieldset-2{
+        width: 550px;
+        height: 600px;
+        border: 2px solid red;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: snow;
+    }
+}
+
+
+.form-top{
+    font-size: 25px;
+}
+
+.form-row{
+    margin-top: 15px;
+}
+
+
+.form-col1, .form-col2{
+    margin-left:20px;
+    border-radius: 8px;
+    font-size: 22px;
+}
+
+.form-col1:hover, .form-col2:hover{
+    background-color:lightskyblue;
+}
+
+
+.form-col2{
+    margin-left: 20px;
+}
+
+#polID{
+    margin-left: 35px;
+}
+
+#address{
+    margin-left: 80px;
+}
+
+.form-row input{
+    width: 25%;
+    height: 25px;
+}
+
+.personal1{
+    margin-left: 10px;
+}
+
+.personal2{
+    margin-left: 40px;
+}
+
+.form-bottom{
+    font-size: 25px;
+}
+
+.usage{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.form-bottom{
+    display: inline-flex;
+    margin-top: 40px;
+}
+
+.radio-btn{
+    margin-left: 40px;
+    
+}
+
+.date-due, .date-rec{
+    margin-left: 60px;
+}
+
+.date{
+    font-size: 20px;
+}
+
+.file-block{
+    position: absolute;
+    margin-left: 100px;
+}
+
+.form-file{
+    font-size: 18px;
+}
+
+.card{
+    width: 75%;
+    height: 10%;
+    border: 3px solid black;
+    margin: 20px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.exp{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.cvc{
+    width: 100px;
+    height: 30px;
+    margin-left: 80px;
+    border-radius: 8px;
+}
+
+.submit{
+    margin-top: 60px;
+    font-size: 20px;
+    padding: 8px 25px;
+    border-radius: 8px;
+}
+
+.submit:hover{
+    background-color: lightskyblue;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.img{
+    width: 80px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.img:hover{
+   border: 1px solid black;
+}
+
+/* RANUJA */
+
+
+/*----Footer----*/
+footer {
+    width: 100%;
+    /* position:absolute; */
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 20px 0 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.flogo {
+    width: 80px;
+    height: 60px;
+    /*margin: 30px;*/
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.email {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.col p a {
+    text-decoration: none;
+    color: white;
+}
+
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: transparent;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
